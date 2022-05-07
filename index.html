@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/be214dba44.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Caregiver Support</title>
+    <link
+      rel="icon"
+      class="tab-icon"
+      type="image/png"
+      sizes="16x16 32x32 48x48"
+      href="images/carelogo.png"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/style-galery.css" />
+    <link rel="stylesheet" href="css/style-functionalities.css" />
+    <link rel="stylesheet" href="css/style-introduction.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style-galery.css" />
+    <link rel="stylesheet" href="css/style-footer.css" />
+    <link rel="stylesheet" href="css/sign-up.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <header class="background-page">
+      <nav class="sticky-nav">
+        <ul class="nav-grid">
+          <li class="nav-item menu-icon">
+            <div class="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-user"></i> Home</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-book"></i> About</a>
+                  </li>
+                  <li>
+                    <a href="#">Info</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="https://erikterwan.com/" target="_blank"
+                      >Show me more</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-logo-item logo">
+            <a href="index.html">
+              <img class="logo-item" src="images/carelogo.png" alt="logo" />
+            </a>
+          </li>
+          <li class="nav-item title">
+            <h1 class="main-title">Caregiver Support</h1>
+          </li>
+          <li class="nav-item partners menu-item">
+            <a href="">Parcerias</a>
+          </li>
+          <li class="nav-item about-us menu-item">
+            <a href="">Quem somos</a>
+          </li>
+          <li class="nav-item login">
+            <button class="login-btn">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="app-utentes" id="app-utenes">Users</div>
+      <div class="popup" id="popup-1">
+        <div class="tabs">
+          <ul class="tabs-pop-up">
+            <li>
+              <button class="tab-item tab-login">Login</button>
+            </li>
+            <li>
+              <button class="tab-item tab-sign-up">Registo</button>
+            </li>
+          </ul>
+          <div class="close-btn">
+            <span class="material-icons close">close</span>
+          </div>
+        </div>
+        <div class="pop-up-login hidden-content">
+          <h1 class="title-pop-up">login</h1>
+          <div class="input-field">
+            <input placeholder="Email" type="text" class="validate-email" />
+          </div>
+          <div class="input-field">
+            <input
+              placeholder="Password"
+              type="password"
+              class="validate-password"
+            />
+            <i class="far fa-eye" id="eyePasswordLogin"></i>
+            <p class="field-password"></p>
+          </div>
+          <button class="accept-button">Entrar</button>
+          <p>
+            Esqueceu-se da palavra-passe? <a href="/signup.html">Clique aqui</a>
+          </p>
+        </div>
+        <div class="pop-up-sign-up hidden-content">
+          <h1 class="title-pop-up">registo</h1>
+          <p class="intructions-fill">Preencha todos os campos.</p>
+          <form action="">
+            <ul class="form-regist">
+              <li>
+                <input
+                  type="text"
+                  class="sign-up-field"
+                  id="fname"
+                  name="fname"
+                  placeholder="Nome"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  class="sign-up-field"
+                  id="lname"
+                  name="lname"
+                  placeholder="Apelido"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  class="sign-up-field"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="sign-up-field"
+                  id="password"
+                  name="password"
+                  title="A palavra-passe deve conter no mínimo 8 caracteres 
+                  com pelo menos uma letra maiúscula,
+                  uma letra minúscula e um número"
+                  placeholder="Palavra-passe"
+                />
+                <i class="far fa-eye" id="eyePassword"></i>
+                <p id="field"></p>
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="sign-up-field"
+                  id="password-repeat"
+                  name="password-repeat"
+                  placeholder="Repita a palavra-passe"
+                />
+                <p id="field-repeat"></p>
+              </li>
+              <li>
+                <button id="btn-submit-regist" type="submit">Submeter</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="introduction-text background-page">
+        <h2 class="first-subtitle">Ajudamos quem ajuda</h2>
+        <br />
+        <p class="first-text">
+          Auxiliamos na nobre missão de quem cuida dos seus. Ajudamos a orientar
+          em situações de emergência
+          <br />
+          Ainda não se encontra registado? Efetue o seu registo para conhecer
+          todas as funcionalidades que temos ao seu dispor.
+        </p>
+        <br />
+        <button class="sign-up-btn" type="">Registar</button>
+      </div>
+      <div class="container-two background-page">
+        <div class="text-gallery">
+          <h2 class="second-subtitle">Apoio ao cuidador 24h</h2>
+          <br />
+          <p class="second-text">
+            Consulte os perfis das pessoas a seu cuidado, receba alertas da sua
+            medicação, obtenha uma agenda ajustada às suas necessidades.
+          </p>
+        </div>
+        <div class="gallery background-page">
+          <img
+            class="image-slide active"
+            src="images/BeFunky-sample5.png"
+            alt="image"
+          />
+          <img
+            class="image-slide"
+            src="images/BeFunky-sample6.png"
+            alt="image"
+          />
+          <div class="gallery-arrows">
+            <a class="prev">
+              <span class="material-icons"> arrow_back_ios </span>
+            </a>
+            <a class="next"
+              ><span class="material-icons"> arrow_forward_ios </span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container-three background-page">
+        <h3 class="func-subtitle">Várias funcionalidades ao seu dispor</h3>
+        <div class="grid-func">
+          <div class="functionality">
+            <img
+              class="func-img-item"
+              src="images/Apoio-a-saude.png"
+              alt="func1"
+            />
+            <br />
+            <h6 class="func-subtitle-img">Apoio à Saude</h6>
+            <p class="func-text">
+              Oferecemos a ajuda necessária para qualquer dúvida sobre a sua
+              saúde
+            </p>
+            <button class="func-btn">Saber mais</button>
+          </div>
+          <div class="functionality">
+            <img
+              class="func-img-item"
+              src="images/Medicamentos.png"
+              alt="func2"
+            /><br />
+
+            <h6 class="func-subtitle-img">Consultar Medicamentos</h6>
+            <p class="func-text">
+              Disponibilizamos qualquer dúvida relacionada com a toma dos seus
+              medicamentos
+            </p>
+            <button class="func-btn">Saber mais</button>
+          </div>
+          <div class="functionality">
+            <img
+              class="func-img-item"
+              src="images/Problemas-de-saude.png"
+              alt="func3"
+            />
+            <h6 class="func-subtitle-img">Saúde 24</h6>
+            <p class="func-text">
+              Em situações mais urgentes saiba mais sobre a ajuda Saúde 24
+            </p>
+            <button class="func-btn">Saber mais</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="background-page">
+      <div class="support-links">
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Links úteis</h4>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">SNS24</a>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">Saúde 24</a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Contactos</h4>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">SNS24</a>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">Saúde 24</a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Redes Sociais</h4>
+          </li>
+          <li>
+            <span>
+              <a href="#" class="fa fa-facebook"></a>
+            </span>
+            <span>
+              <a href="#" class="fa fa-twitter"></a>
+            </span>
+            <span>
+              <a href="#" class="fa fa-instagram"></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        Copyright © 2020 Caregiver Support. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/loginValidation.js"></script>
+  </body>
+</html>

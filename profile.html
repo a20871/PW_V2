@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/be214dba44.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Caregiver Support</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style-footer.css" />
+    <link rel="stylesheet" href="css/style-regist.css" />
+    <link rel="stylesheet" href="css/style-profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <header>
+      <nav class="sticky-nav">
+        <ul class="nav-grid">
+          <li class="nav-item menu-icon">
+            <div class="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-user"></i> Home</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-book"></i> About</a>
+                  </li>
+                  <li>
+                    <a href="#">Info</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">Show me more</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-logo-item logo">
+            <a href="index.html">
+              <img class="logo-item" src="images/carelogo.png" alt="logo" />
+            </a>
+          </li>
+          <li class="nav-item title">
+            <h1 class="main-title">Caregiver Support</h1>
+          </li>
+          <li class="nav-item partners menu-item">
+            <a href="">Parcerias</a>
+          </li>
+          <li class="nav-item about-us menu-item">
+            <a href="">Quem somos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="instructions-regist">
+        Adicione o perfil da pessoa ao seu cuidado
+      </p>
+      <p class="intructions-fill">Preencha todos os campos por favor.</p>
+      <form action="">
+        <ul class="form-regist">
+          <li>
+            <input
+              type="text"
+              class="sign-up-field"
+              id="fname"
+              name="fname"
+              placeholder="Nome"
+            />
+          </li>
+          <li>
+            <input
+              type="number"
+              class="sign-up-field"
+              id="sns"
+              name="sns"
+              placeholder="Nº Utente SNS"
+            />
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input
+                type="radio"
+                name="gender"
+                span
+                class="checkmark"
+                id="masculino"
+                value="masculino"
+              />
+              Masculino</label
+            >
+            <label class="radio-btn">
+              <input
+                type="radio"
+                name="gender"
+                span
+                class="checkmark"
+                id="feminino"
+                value="Feminino"
+              />
+              Feminino</label
+            >
+          </li>
+          <li>Data de Nascimento</li>
+          <li>
+            <span>
+              <label for="day"></label>
+              <select name="day" class="dayPicker" id="day"></select>
+            </span>
+
+            <span>
+              <label for="month"></label>
+              <select name="month" class="dayPicker" id="month"></select>
+            </span>
+
+            <span>
+              <label for="year"></label>
+              <select name="year" class="dayPicker" id="year"></select>
+            </span>
+          </li>
+
+          <li>
+            <button id="btn-submit-regist" type="submit">Seguinte</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    <footer>
+      <div class="support-links">
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Links úteis</h4>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">SNS24</a>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">Saúde 24</a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Contactos</h4>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">SNS24</a>
+          </li>
+          <li>
+            <a href="https://www.sns24.gov.pt/" target="_blank">Saúde 24</a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li>
+            <h4 class="related-links">Redes Sociais</h4>
+          </li>
+          <li>
+            <span>
+              <a href="#" class="fa fa-facebook"></a>
+            </span>
+            <span>
+              <a href="#" class="fa fa-twitter"></a>
+            </span>
+            <span>
+              <a href="#" class="fa fa-instagram"></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        Copyright © 2020 Caregiver Support. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/profile.js"></script>
+  </body>
+</html>
